@@ -83,6 +83,38 @@ body {
     width: 100%;
 }
 
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.lang-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.lang-button:hover {
+    transform: scale(1.1);
+}
+
+.lang-button.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.lang-button img {
+    width: 30px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    vertical-align: middle; /* Align images nicely */
+}
+
 .mobile-menu {
     display: none;
     color: var(--light-text);

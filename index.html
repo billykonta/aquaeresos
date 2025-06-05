@@ -12,59 +12,70 @@
         <div class="nav-logo">
             <img src="images/logo.png" alt="Aqua Canteen Logo" class="logo-image">
         </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="#team">Team</a>
+        </div>
+        <div class="language-switcher">
+            <button class="lang-button" data-lang="en"><img src="images/uk-flag.png" alt="UK Flag"></button>
+            <button class="lang-button" data-lang="gr"><img src="images/greek-flag.jpg" alt="Greek Flag"></button>
+        </div>
     </nav>
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to AQUA</h1>
-            <p>Your perfect beach destination for drinks, cocktails, and delicious food</p>
+            <h1 data-lang-key="hero-heading">Welcome to AQUA</h1>
+            <p data-lang-key="hero-description">Your perfect beach destination for drinks, cocktails, and delicious food</p>
             <a href="#menu" class="cta-button">View Menu</a>
         </div>
     </header>
 
     <section id="about" class="about-section">
         <div class="about-content">
-            <h2>About AQUA</h2>
-            <p>Aqua is more than just a beach canteen—it's a dream brought to life by two 19-year-old friends with a passion for creating the ultimate seaside experience. With a focus on quality, refreshing flavors, and a vibrant atmosphere, we strive to offer our customers the perfect mix of relaxation and enjoyment by the water. Whether you're here for a cold drink, a delicious snack, or just good vibes under the sun, Aqua is the place to be. Join us and make every beach day unforgettable!</p>
+            <h2 data-lang-key="about-heading">About AQUA</h2>
+            <p data-lang-key="about-text">Aqua is more than just a beach canteen—it's a dream brought to life by two 19-year-old friends with a passion for creating the ultimate seaside experience. With a focus on quality, refreshing flavors, and a vibrant atmosphere, we strive to offer our customers the perfect mix of relaxation and enjoyment by the water. Whether you're here for a cold drink, a delicious snack, or just good vibes under the sun, Aqua is the place to be. Join us and make every beach day unforgettable!</p>
         </div>
     </section>
 
     <section id="menu" class="menu-section">
-        <h2>Our Menu</h2>
-        <button id="menu-category-toggle">Select Category</button>
+        <h2 data-lang-key="menu-heading">Our Menu</h2>
+        <button id="menu-category-toggle" data-lang-key="menu-category-toggle">Select Category</button>
         <div id="menu-category-selector">
-            <a href="#coffee-menu">Coffee</a>
-            <a href="#refreshing-drinks-menu">Refreshing Drinks</a>
-            <a href="#cocktails-menu">Cocktails</a>
-            <a href="#food-menu">Food</a>
-            <a href="#for-the-big-players">For The Big Players</a>
+            <a href="#coffee-menu" data-lang-key="menu-cat-coffee">Coffee</a>
+            <a href="#refreshing-drinks-menu" data-lang-key="menu-cat-refreshing">Refreshing Drinks</a>
+            <a href="#cocktails-menu" data-lang-key="menu-cat-cocktails">Cocktails</a>
+            <a href="#food-menu" data-lang-key="menu-cat-food">Food</a>
+            <a href="#for-the-big-players" data-lang-key="menu-cat-big-players">For The Big Players</a>
         </div>
         <div class="menu-container">
             <div class="menu-category" id="coffee-menu">
                 <h3><i class="fas fa-coffee"></i> Coffee</h3>
                 <div class="menu-items">
                     <div class="item">
-                        <span>Espresso</span>
+                        <span data-lang-key="menu-item-coffee-espresso">Espresso</span>
                         <span class="price">€2.50</span>
                     </div>
                     <div class="item">
-                        <span>Cappuccino</span>
+                        <span data-lang-key="menu-item-coffee-cappuccino">Cappuccino</span>
                         <span class="price">€3.00</span>
                     </div>
                     <div class="item">
-                        <span>Freddo Espresso</span>
+                        <span data-lang-key="menu-item-coffee-freddo-espresso">Freddo Espresso</span>
                         <span class="price">€3.00</span>
                     </div>
                     <div class="item">
-                        <span>Freddo Cappuccino</span>
+                        <span data-lang-key="menu-item-coffee-freddo-cappuccino">Freddo Cappuccino</span>
                         <span class="price">€3.50</span>
                     </div>
                     <div class="item">
-                        <span>Frappe</span>
+                        <span data-lang-key="menu-item-coffee-frappe">Frappe</span>
                         <span class="price">€3.00</span>
                     </div>
                     <div class="item">
-                        <span>Iced Latte</span>
+                        <span data-lang-key="menu-item-coffee-iced-latte">Iced Latte</span>
                         <span class="price">€4.50</span>
                     </div>
                 </div>
@@ -75,35 +86,35 @@
                 <h3><i class="fas fa-glass-martini-alt"></i> Refreshing Drinks</h3>
                 <div class="menu-items">
                     <div class="item">
-                        <span>Homemade Lemonade</span>
+                        <span data-lang-key="menu-item-refreshing-lemonade">Homemade Lemonade</span>
                         <span class="price">€4.00</span>
-                        <p class="item-description"></p>
+                        <p class="item-description" data-lang-key="menu-desc-refreshing-lemonade"></p>
                     </div>
                     <div class="item">
-                        <span>Fresh Orange Juice</span>
+                        <span data-lang-key="menu-item-refreshing-orange-juice">Fresh Orange Juice</span>
                         <span class="price">€4.00</span>
-                        <p class="item-description"></p>
+                        <p class="item-description" data-lang-key="menu-desc-refreshing-orange-juice"></p>
                     <div class="item">
-                        <span>Mixed Juice Smoothie</span>
+                        <span data-lang-key="menu-item-refreshing-smoothie">Mixed Juice Smoothie</span>
                         <span class="price">€5.50</span>
-                        <p class="item-description">pineapple, banana, coconut .</p>
-                        <p class="item-description">strawberry, peach, mango .</p>
-                        <p class="item-description">strawberry,cranberry, blueberry .</p>
+                        <p class="item-description" data-lang-key="menu-desc-refreshing-smoothie-1">pineapple, banana, coconut .</p>
+                        <p class="item-description" data-lang-key="menu-desc-refreshing-smoothie-2">strawberry, peach, mango .</p>
+                        <p class="item-description" data-lang-key="menu-desc-refreshing-smoothie-3">strawberry,cranberry, blueberry .</p>
                     </div> 
                     <div class="item">
-                        <span>Cold Chocolate</span>
+                        <span data-lang-key="menu-item-refreshing-cold-chocolate">Cold Chocolate</span>
                         <span class="price">€3.50</span>
-                        <p class="item-description"></p>
+                        <p class="item-description" data-lang-key="menu-desc-refreshing-cold-chocolate"></p>
                     </div>
                     <div class="item">
-                        <span>Milkshake</span>
+                        <span data-lang-key="menu-item-refreshing-milkshake">Milkshake</span>
                         <span class="price">€5.50</span>
-                        <p class="item-description">Creamy vanilla ice cream with your choice of flavor.</p>
+                        <p class="item-description" data-lang-key="menu-desc-refreshing-milkshake">Creamy vanilla ice cream with your choice of flavor.</p>
                     </div>
                     <div class="item">
-                        <span>Granita</span>
+                        <span data-lang-key="menu-item-refreshing-granita">Granita</span>
                         <span class="price">€3.50</span>
-                        <p class="item-description">strawberrie, mango, pineapple, cococnut, watermelon.</p>
+                        <p class="item-description" data-lang-key="menu-desc-refreshing-granita">strawberrie, mango, pineapple, cococnut, watermelon.</p>
                     </div>
                     
                 </div>
@@ -114,32 +125,32 @@
                 <h3><i class="fas fa-cocktail"></i> Cocktails</h3>
                 <div class="menu-items">
                     <div class="item">
-                        <span>Mojito</span>
+                        <span data-lang-key="menu-item-cocktails-mojito">Mojito</span>
                         <span class="price">€8.00</span>
                     </div>
                     <div class="item">
-                        <span>Caipirinha</span>
+                        <span data-lang-key="menu-item-cocktails-caipirinha">Caipirinha</span>
                         <span class="price">€8.00</span>
                     </div>
                     <div class="item">
-                        <span>Aperol Spritz</span>
+                        <span data-lang-key="menu-item-cocktails-aperol-spritz">Aperol Spritz</span>
                         <span class="price">€8.00</span>
                     </div>
                     <div class="item">
-                        <span>Sex on the Beach</span>
+                        <span data-lang-key="menu-item-cocktails-sex-on-the-beach">Sex on the Beach</span>
                         <span class="price">€8.00</span>
                     </div>
                     <div class="item">
-                        <span>Daiquiri</span>
+                        <span data-lang-key="menu-item-cocktails-daiquiri">Daiquiri</span>
                         <span class="price">€8.00</span>
                     </div>
                     <div class="item">
-                        <span>Cocktail Granita</span>
+                        <span data-lang-key="menu-item-cocktails-granita">Cocktail Granita</span>
                         <span class="price">€8.00</span>
-                        <p class="item-description">you choose your alcohol and granita preferances.</p>
+                        <p class="item-description" data-lang-key="menu-desc-cocktails-granita">you choose your alcohol and granita preferances.</p>
                     </div>
                     <div class="item">
-                        <span>Non Alcohol Cocktail</span>
+                        <span data-lang-key="menu-item-cocktails-non-alcohol">Non Alcohol Cocktail</span>
                         <span class="price">€6.00</span>
                     </div>
                 </div>
@@ -149,74 +160,74 @@
                 <h3><i class="fas fa-utensils"></i> Food</h3>
                 <div class="menu-items">
                     <div class="item">
-                        <span>Sandwich</span>
+                        <span data-lang-key="menu-item-food-sandwich">Sandwich</span>
                         <span class="price">€3.50</span>
-                        <p class="item-description">ham, cheese, lettuce, tomao, mayo.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-sandwich">ham, cheese, lettuce, tomao, mayo.</p>
                     </div>
                     <div class="item">
-                        <span>Chicken Sandwich</span>
+                        <span data-lang-key="menu-item-food-chicken-sandwich">Chicken Sandwich</span>
                         <span class="price">€5.00</span>
-                        <p class="item-description">cheese, lettuce, tomao, mayo, chicken nuggets.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-chicken-sandwich">cheese, lettuce, tomao, mayo, chicken nuggets.</p>
                     </div>
                     <div class="item">
-                        <span>Toast</span>
+                        <span data-lang-key="menu-item-food-toast">Toast</span>
                         <span class="price">€2.50</span>
-                        <p class="item-description"></p>
+                        <p class="item-description" data-lang-key="menu-desc-food-toast"></p>
                     </div>
                     <div class="item">
-                        <span>Club Sandwich</span>
+                        <span data-lang-key="menu-item-food-club-sandwich">Club Sandwich</span>
                         <span class="price">€6.00</span>
-                        <p class="item-description">ham, cheese, lettuce, tomao, mayo.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-club-sandwich">ham, cheese, lettuce, tomao, mayo.</p>
                     </div>
                     <div class="item">
-                        <span>Chicken Club Sandwich</span>
+                        <span data-lang-key="menu-item-food-chicken-club-sandwich">Chicken Club Sandwich</span>
                         <span class="price">€7.50</span>
-                        <p class="item-description">cheese, lettuce, tomao, mayo, chicken nuggets.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-chicken-club-sandwich">cheese, lettuce, tomao, mayo, chicken nuggets.</p>
                     </div>
                     <div class="item">
-                        <span>Chicken Tortilla</span>
+                        <span data-lang-key="menu-item-food-chicken-tortilla">Chicken Tortilla</span>
                         <span class="price">€5.50</span>
-                        <p class="item-description">cheese, lettuce, tomao, sauce, chicken nuggets.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-chicken-tortilla">cheese, lettuce, tomao, sauce, chicken nuggets.</p>
                     </div>
                     <div class="item">
-                        <span>Sausage Tortilla</span>
+                        <span data-lang-key="menu-item-food-sausage-tortilla">Sausage Tortilla</span>
                         <span class="price">€4.50</span>
-                        <p class="item-description">cheese, sauce, sausage
+                        <p class="item-description" data-lang-key="menu-desc-food-sausage-tortilla">cheese, sauce, sausage
                     </div>
                     <div class="item">
-                        <span>Burger</span>
+                        <span data-lang-key="menu-item-food-burger">Burger</span>
                         <span class="price">€7.50</span>
-                        <p class="item-description">beef, cheese, bacon, lettuce, tomato, sauce.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-burger">beef, cheese, bacon, lettuce, tomato, sauce.</p>
                     </div>
                     <div class="item">
-                        <span>Greek Salad</span>
+                        <span data-lang-key="menu-item-food-greek-salad">Greek Salad</span>
                         <span class="price">€6.00</span>
-                        <p class="item-description">tomato, cucumber, onion, feta, olive oil.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-greek-salad">tomato, cucumber, onion, feta, olive oil.</p>
                     </div>
                     <div class="item">
-                        <span>Crepe</span>
+                        <span data-lang-key="menu-item-food-crepe">Crepe</span>
                         <span class="price">€4.50</span>
-                        <p class="item-description">ham, cheese, lettuce, tomao, mayo.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-crepe">ham, cheese, lettuce, tomao, mayo.</p>
                     </div>
                     <div class="item">
-                        <span>Chicken Crepe</span>
+                        <span data-lang-key="menu-item-food-chicken-crepe">Chicken Crepe</span>
                         <span class="price">€6.00</span>
-                        <p class="item-description">ham, cheese, lettuce, tomao, mayo, chicken nuggets.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-chicken-crepe">ham, cheese, lettuce, tomao, mayo, chicken nuggets.</p>
                     </div>
                     <div class="item">
-                        <span>Sausage Crepe</span>
+                        <span data-lang-key="menu-item-food-sausage-crepe">Sausage Crepe</span>
                         <span class="price">€6.00</span>
-                        <p class="item-description">cheese, sauce, tomato, lettuce, sausage.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-sausage-crepe">cheese, sauce, tomato, lettuce, sausage.</p>
                     </div>
                     <div class="item">
-                        <span>Swewt crepe</span>
+                        <span data-lang-key="menu-item-food-sweet-crepe">Swewt crepe</span>
                         <span class="price">€4.50</span>
-                        <p class="item-description">chocolate, biscuit.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-sweet-crepe">chocolate, biscuit.</p>
                     </div>
                     <div class="item">
-                        <span>Ice Cream Crepe</span>
+                        <span data-lang-key="menu-item-food-ice-cream-crepe">Ice Cream Crepe</span>
                         <span class="price">€6.00</span>
-                        <p class="item-description">chocolate, biscuit, ice cream of your choise.</p>
+                        <p class="item-description" data-lang-key="menu-desc-food-ice-cream-crepe">chocolate, biscuit, ice cream of your choise.</p>
                     </div>
                     
                     
@@ -227,25 +238,25 @@
                 <h3><img src="images/icons8-uefa-champions-32.png" alt="UEFA Champions Icon" class="menu-category-icon"> For The Big Players</h3>
                 <div class="menu-items">
                     <div class="item">
-                        <span>Gin Bottle</span>
+                        <span data-lang-key="menu-item-big-players-gin">Gin Bottle</span>
                         <span class="price">€60.00</span>
                     </div>
                     <div class="item">
-                        <span>Vodka Bottle</span>
+                        <span data-lang-key="menu-item-big-players-vodka">Vodka Bottle</span>
                         <span class="price">€60.00</span>
                     </div>
                     <div class="item">
-                        <span>Tequila Bottle</span>
+                        <span data-lang-key="menu-item-big-players-tequila">Tequila Bottle</span>
                         <span class="price">€60.00</span>
                     </div>
                     <div class="item">
-                        <span>Premium Vodka</span>
+                        <span data-lang-key="menu-item-big-players-premium-vodka">Premium Vodka</span>
                         <span class="price">€100.00</span>
                     </div>
                     <div class="item">
-                        <span>Shisha</span>
+                        <span data-lang-key="menu-item-big-players-shisha">Shisha</span>
                         <span class="price">€20.00</span>
-                        <p class="item-description">ask for the days flavors.</p>
+                        <p class="item-description" data-lang-key="menu-desc-big-players-shisha">ask for the days flavors.</p>
                     </div>
                 </div>
             </div>
@@ -254,24 +265,24 @@
     </section>
 
     <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
+        <h2 data-lang-key="contact-heading">Contact Us</h2>
         <div class="contact-content">
             <div class="contact-info">
                 <div class="info-item">
                     <i class="fas fa-clock"></i>
-                    <p>Open Daily: 9:00 AM - 12:00 AM</p>
+                    <p data-lang-key="contact-hours">Open Daily: 9:00 AM - 12:00 AM</p>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-phone"></i>
-                    <p>+30 6973767325</p>
+                    <p data-lang-key="contact-phone">+30 6973767325</p>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>Skala Eresos, Greece</p>
+                    <p data-lang-key="contact-location">Skala Eresos, Greece</p>
                 </div>
                 <div class="info-item">
                     <i class="fab fa-instagram"></i>
-                    <p><a href="https://www.instagram.com/aqua.eresos/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Instagram</a></p>
+                    <p data-lang-key="contact-instagram"><a href="https://www.instagram.com/aqua.eresos/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Instagram</a></p>
                 </div>
             </div>
         </div>
@@ -280,7 +291,7 @@
     <section id="team" class="team-section">
         <div class="team-content">
             <div class="team-content-box">
-                <h2>Be a part of our team</h2>
+                <h2 data-lang-key="team-heading">Be a part of our team</h2>
                 <img src="images/team-shirt.png" alt="Aqua Canteen Team Shirt" class="team-shirt-image">
             </div>
         </div>
@@ -291,8 +302,8 @@
             <div class="social-links">
                 <a href="#"><i class="fab fa-tripadvisor"></i></a>
             </div>
-            <p>&copy; 2024 Aqua . All rights reserved.</p>
-            <p class="developer-credit"><a href="https://kad-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">&lt;/&gt; KAD Development</a></p>
+            <p data-lang-key="footer-copyright">&copy; 2024 Aqua . All rights reserved.</p>
+            <p class="developer-credit" data-lang-key="footer-developer"><a href="https://kad-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">&lt;/&gt; KAD Development</a></p>
         </div>
     </footer>
 
