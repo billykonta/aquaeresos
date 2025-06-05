@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Team Section
             "team-heading": "Be a part of our team",
             // Footer
-            "footer-copyright": "© 2024 Aqua. All rights reserved.",
+            "footer-copyright": "&#169; 2024 Aqua. All rights reserved.",
             "footer-developer": "</> KAD Development" // Text inside the link
         },
         gr: {
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Team Section (Greek Translations)
             "team-heading": "Γίνετε μέλος της ομάδας μας",
             // Footer (Greek Translations)
-            "footer-copyright": "© 2024 Aqua. Με επιφύλαξη κάθε δικαιώματος.",
+            "footer-copyright": "&#169; 2024 Aqua. Με επιφύλαξη κάθε δικαιώματος.",
             "footer-developer": "</> KAD Development" // Text inside the link
         }
     };
