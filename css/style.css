@@ -528,30 +528,69 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Styles for the Instagram link in the contact section */
+.contact-info .info-item a {
+    color: inherit; /* Inherit color from parent info-item */
+    text-decoration: none;
+    display: flex; /* Use flex to align icon and text */
+    align-items: center; /* Vertically align icon and text */
+    gap: 5px; /* Space between icon and text */
+    transition: color 0.3s ease;
+}
+
+.contact-info .info-item a:hover {
+    color: var(--secondary-color);
+}
+
+.contact-info .info-item a i {
+    font-size: 1.2rem; /* Adjust icon size if needed */
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--light-text);
-    padding: 2rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 1rem; /* Space between social links and text container */
+}
+
+.footer-text-container {
+    display: flex;
+    flex-direction: column; /* Stack copyright and developer text */
+    gap: 0.5rem; /* Space between the two lines */
+    align-items: center; /* Center text lines */
+}
+
 .social-links {
-    margin-bottom: 1rem;
+    /* Add some margin if needed to separate from text */
+    margin-bottom: 0.5rem; /* Space between social links and text */
 }
 
 .social-links a {
     color: var(--light-text);
     font-size: 1.5rem;
-    margin: 0 1rem;
-    transition: color 0.3s;
+    margin: 0 10px; /* Add horizontal space between social icons */
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
     color: var(--secondary-color);
 }
 
-.developer-credit {
+.developer-credit a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.developer-credit a:hover {
     color: var(--secondary-color);
 }
 
