@@ -198,13 +198,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(26, 26, 26, 0.95); /* Dark background with transparency */
-    padding: 3rem;
+    display: none; /* Add this line to initially hide the selector */
+    z-index: 1000; /* Ensure it appears above other content */
+    padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    z-index: 1100; /* Higher z-index than navbar */
-    display: none; /* Initially hidden */
-    flex-direction: column; /* Stack links vertically */
-    align-items: center; /* Center links horizontally */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    flex-direction: column; /* To stack links vertically */
+    align-items: center;
 }
 
 #close-menu-selector {
@@ -264,6 +264,11 @@ body {
 @media (max-width: 768px) {
     .menu-container {
         /* Flexbox will handle wrapping automatically */
+    }
+
+    /* Adjust hero background for mobile */
+    .hero {
+        background-attachment: scroll; /* Change fixed to scroll on mobile */
     }
 }
 
