@@ -202,8 +202,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Team Section
             "team-heading": "Be a part of our team",
             // Footer
-            "footer-copyright": "&copy; 2024 Aqua . All rights reserved.",
-            "footer-developer": "&lt;/&gt; KAD Development" // Text inside the link
+            "footer-copyright": "© 2024 Aqua. All rights reserved.",
+            "footer-developer": "</> KAD Development" // Text inside the link
         },
         gr: {
             "hero-heading": "Καλώς ήρθατε στο AQUA",
@@ -293,8 +293,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Team Section (Greek Translations)
             "team-heading": "Γίνετε μέλος της ομάδας μας",
             // Footer (Greek Translations)
-            "footer-copyright": "&copy; 2024 Aqua . Με επιφύλαξη κάθε δικαιώματος.",
-            "footer-developer": "&lt;/&gt; KAD Development" // Text inside the link
+            "footer-copyright": "© 2024 Aqua. Με επιφύλαξη κάθε δικαιώματος.",
+            "footer-developer": "</> KAD Development" // Text inside the link
         }
     };
 
@@ -303,6 +303,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-lang-key]').forEach(element => {
             const key = element.getAttribute('data-lang-key');
             if (translations[language] && translations[language][key]) {
+                if (key === 'footer-developer') {
+                    // Don't update the developer credit as it's handled by HTML
+                    return;
+                }
                 element.textContent = translations[language][key];
             }
         });
