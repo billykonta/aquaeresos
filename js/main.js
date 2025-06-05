@@ -90,6 +90,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Add click event listener to the logo to scroll to the hero section
+    const logo = document.querySelector('.nav-logo'); // Assuming your logo is inside a div with class 'nav-logo'
+    if (logo) {
+        logo.style.cursor = 'pointer'; // Indicate it's clickable
+        logo.addEventListener('click', () => {
+            const heroSection = document.getElementById('home');
+            if (heroSection) {
+                 // Calculate the offset to account for the fixed navbar
+                 const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                 const targetPosition = heroSection.getBoundingClientRect().top + window.scrollY;
+                 const offsetPosition = targetPosition - navbarHeight; // Adjust based on your layout needs
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
+
     // --- Language Switching ---
 
     // Translations object (English as default, Greek translations added)
