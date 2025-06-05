@@ -1,12 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu functionality
-    const mobileMenuToggle = document.querySelector('.mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
-
-    mobileMenuToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('show');
-    });
-
     // Smooth scrolling for navigation links
     document.querySelectorAll('.nav-links a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -14,10 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
-            // Hide mobile menu after clicking a link
-            if (navLinks.classList.contains('show')) {
-                navLinks.classList.remove('show');
-            }
         });
     });
 
