@@ -63,7 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(escapedTargetId);
             
             if (targetElement) {
-                targetElement.scrollIntoView({
+                // Get the position of the target element and the height of the fixed navbar
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = targetPosition - navbarHeight - 20; // Subtract navbar height and a little extra padding
+
+                window.scrollTo({
+                    top: offsetPosition,
                     behavior: 'smooth'
                 });
                 
@@ -71,5 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 categorySelectorDiv.style.display = 'none';
             }
         });
+    });
+
+    // Close category selector when clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInsideSelector = categorySelectorDiv.contains(event.target);
+        const isClickOnToggleButton = categoryToggleBtn.contains(event.target);
+
+        // If the selector is visible and the click is NOT inside the selector AND NOT on the toggle button
+        if (categorySelectorDiv.style.display === 'flex' && !isClickInsideSelector && !isClickOnToggleButton) {
+            categorySelectorDiv.style.display = 'none';
+        }
     });
 });
